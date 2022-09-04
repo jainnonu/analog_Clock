@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: #081923; */
+}
+
+.maincont{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.colckContainer{
+    background-image: url(images/Clock_png.png);
+    background-size: 100%;
+    width: 42vw;
+    height: 42vw;
+    margin: 20px auto;
+    position: relative;
+}
+
+#hourContainer,
+#minContainer,
+#secContainer{
+    position: absolute;
+    border-radius: 100px;
+    transform-origin: bottom;
+}
+
+#hourContainer{
+    width: 1.5%;
+    height: 15%;
+    top: 35%;
+    left: 49.25%;
+    background-color: #f61462;
+}
+
+#minContainer{
+    width: 1%;
+    height: 20%;
+    top: 30%;
+    left: 49.5%;
+    background-color: #000;
+}
+
+#secContainer{
+    width: .9%;
+    height: 25%;
+    top: 25%;
+    left: 49.55%;
+    background-color: #2983ce;
+}
+
+p{
+    text-shadow: 0 0 10px #000;
+    font-family: "Mouse Memoirs",sans-serif;
+    font-size: 3rem;
+    color: #fff;
+    position: absolute;
+    text-align: center;
+    height: 10%;
+    width: 24%;
+    top: 60%;
+    left: 38%;
+}
+
+@media (max-width: 990px) {
+  .colckContainer{
+    width: 80vw;
+    height: 80vw;
+  }
+}
